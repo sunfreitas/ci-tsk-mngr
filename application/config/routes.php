@@ -52,3 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['tasks/']['GET'] = "task/index";
+$route['tasks/create']['GET'] = "task/create";
+$route['tasks/']['POST'] = "task/save";
+$route['tasks/(:num)']['GET'] = "task/read";
+$route['tasks/(:num)/edit']['GET'] = "task/edit";
+$route['tasks/(:num)']['PUT'] = "task/update";
+$route['tasks/(:num)']['DELETE'] = "task/delete";
