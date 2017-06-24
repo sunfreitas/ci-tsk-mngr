@@ -9,7 +9,7 @@ application/logs/*
 !application/logs/.htaccess
 
 application/config/database.php
-
+.phpintel/*
 composer.lock
 
 user_guide/*
